@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/signup.dart';
 
 import '../util/places.dart';
 import '../widgets/horizontal_place_item.dart';
@@ -15,10 +16,18 @@ class Home extends StatelessWidget {
         centerTitle: true,
         actions: <Widget>[
           IconButton(
-            icon: IconBadge(
-              icon: Icons.notifications_none,
+            icon: Icon(
+              Icons.logout,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return Signup();
+                  },
+                ),
+              );
+            },
           ),
         ],
       ),

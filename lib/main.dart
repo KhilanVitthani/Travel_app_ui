@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/screens/main_screen.dart';
+import 'package:travel_app/screens/signup.dart';
 import 'package:travel_app/util/const.dart';
 
 void main() async {
@@ -17,9 +18,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: Constants.appName,
-      theme: Constants.lightTheme,
-      darkTheme: Constants.darkTheme,
-      home: MainScreen(),
+      // theme: Constants.lightTheme,
+      // darkTheme: Constants.darkTheme,
+      home: Signup(),
     );
   }
 }
